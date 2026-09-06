@@ -1,0 +1,50 @@
+.all-cards {
+  min-height: 100%;     /* expands naturally when cards wrap */
+  width: 100%;
+  padding: 20px;
+  background-color: #FFF4BF;
+  display: flex;
+  flex-wrap: wrap;      /* lets cards drop to the next line */
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  height: 340px;
+  width: 220px;
+  border-radius: 10px;
+  background-color: #FFBEFB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  padding: 16px;
+  /* overflow: hidden;    prevents long descriptions from spilling out */
+}
+
+.card h2 {
+  font-size: 14px;
+  display: -webkit-box;
+  /* -webkit-line-clamp: 2; */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card h4 {
+  font-size: 15px;
+  font-weight: normal;
+  display: -webkit-box;
+  /* -webkit-line-clamp: 3; */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+img {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  object-fit: contain;   /* 'contain' keeps product shapes intact; 'cover' crops them */
+  background: white;
+  padding: 4px;
+}
